@@ -1,0 +1,97 @@
+/* App.css */
+
+/* General Reset and Page Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #56ab2f, #a8e063); /* Nature Vibes */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Form Container */
+form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input and Select Fields */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #a5d6a7;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #e6f4ea;        /* Soft green to blend with bg */
+  color: #1b5e20;                   /* Deep green text for visibility */
+}
+
+input::placeholder {
+  color: #4caf50;
+}
+
+input:focus,
+select:focus {
+  border-color: #66bb6a;
+  background-color: #d0f0d6;        /* Slightly lighter on focus */
+  outline: none;
+  color: #1b5e20;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b5e20;
+  transform: scale(1.03);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
